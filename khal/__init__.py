@@ -27,6 +27,8 @@ except ImportError:
              'using GitHub\'s tarballs or svn access. Either clone '
              'from GitHub via git or get a tarball from PyPI.')
 
+import click_log
+
 __productname__ = 'khal'
 __version__ = version
 __author__ = 'Christian Geier'
@@ -35,3 +37,5 @@ __author_email__ = 'khal@lostpackets.de'
 __description__ = 'A standards based terminal calendar'
 __license__ = 'Expat/MIT, see COPYING'
 __homepage__ = 'https://lostpackets.de/khal/'
+
+click_log.basic_config('khal')
